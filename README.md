@@ -15,3 +15,6 @@ Pin connection list:
 | C1         | 7           |
 | C2         | 8           |
 | C3         | 9           |
+
+
+pio lib -g install path_to_zip_file

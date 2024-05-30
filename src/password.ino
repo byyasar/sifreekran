@@ -1,7 +1,7 @@
 #include "password.h"
 #include "lcd.h"
 
-extern LiquidCrystal_I2C lcd; // LCD nesnesi
+extern LiquidCrystal_I2cTUR lcd; // LCD nesnesi
 
 char enteredPassword[7]; // Girilen şifre için dizi
 byte passwordIndex = 0; // Şifre dizisinin indeksi

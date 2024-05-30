@@ -20,12 +20,11 @@ void handleKey(char key) {
       case 'C':
         if (passwordIndex > 0) {
           passwordIndex--; // Şifre dizisi indeksini azalt
-          lcd.setCursor(passwordIndex, 2); // Şifre konumuna git
-          lcd.print(" "); // Mevcut karakteri sil
-          lcd.setCursor(passwordIndex, 2); // Şifre konumuna geri git
+          lcd.setCursor(7 + passwordIndex, 1); // Şifre konumuna git (orta hizalama için 7 ekledik)
+          lcd.print("_"); // Mevcut karakteri alt çizgiyle değiştir
         }
         break;
-      case '*':
+      case 'D':
         if (passwordIndex == 6) {
           verifyPassword(); // Şifreyi doğrula
         }
@@ -33,10 +32,10 @@ void handleKey(char key) {
       default:
         if (passwordIndex < 6 && isDigit(key)) {
           enteredPassword[passwordIndex] = key; // Girilen tuşu şifre dizisine ekle
-          lcd.setCursor(passwordIndex, 2); // Şifre konumuna git
+          lcd.setCursor(7 + passwordIndex, 1); // Şifre konumuna git (orta hizalama için 7 ekledik)
           lcd.print(key); // Girilen tuşu yaz
-          delay(500); // 500ms bekle
-          lcd.setCursor(passwordIndex, 2); // Şifre konumuna geri git
+          delay(250); // 500ms bekle
+          lcd.setCursor(7 + passwordIndex, 1); // Şifre konumuna geri git
           lcd.print("*"); // Karakteri yıldız ile değiştir
           passwordIndex++; // Şifre dizisi indeksini artır
         }

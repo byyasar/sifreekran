@@ -9,7 +9,7 @@
             "name": "PlatformIO",
             "includePath": [
                 "C:/Users/Yasar/Downloads/sifregirisekrani/src",
-                "C:/Users/Yasar/Downloads/sifregirisekrani/.pio/libdeps/uno/LiquidCrystal_I2C",
+                "C:/Users/Yasar/Downloads/sifregirisekrani/.pio/libdeps/uno/LiquidCrystal_I2cTUR/src",
                 "C:/Users/Yasar/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
                 "C:/Users/Yasar/Downloads/sifregirisekrani/.pio/libdeps/uno/Keypad/src",
                 "C:/Users/Yasar/.platformio/packages/framework-arduino-avr/cores/arduino",
@@ -24,7 +24,7 @@
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
                     "C:/Users/Yasar/Downloads/sifregirisekrani/src",
-                    "C:/Users/Yasar/Downloads/sifregirisekrani/.pio/libdeps/uno/LiquidCrystal_I2C",
+                    "C:/Users/Yasar/Downloads/sifregirisekrani/.pio/libdeps/uno/LiquidCrystal_I2cTUR/src",
                     "C:/Users/Yasar/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
                     "C:/Users/Yasar/Downloads/sifregirisekrani/.pio/libdeps/uno/Keypad/src",
                     "C:/Users/Yasar/.platformio/packages/framework-arduino-avr/cores/arduino",

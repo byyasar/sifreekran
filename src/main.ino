@@ -1,11 +1,11 @@
 #include <Wire.h> // I2C kütüphanesi
-#include <LiquidCrystal_I2C.h> // I2C LCD kütüphanesi
+#include <LiquidCrystal_I2cTUR.h> // I2C LCD kütüphanesi
 #include <Keypad.h> // Keypad kütüphanesi
 #include "lcd.h" // LCD işlemlerini içeren dosya
 #include "mykeypad.h" // Keypad işlemlerini içeren dosya
 #include "password.h" // Şifre işlemlerini içeren dosya
 
-LiquidCrystal_I2C lcd(0x27, 20, 4); // I2C adresi 0x27 olan 20x4 LCD tanımlaması
+LiquidCrystal_I2cTUR lcd(0x27, 20, 4); // I2C adresi 0x27 olan 20x4 LCD tanımlaması
 
 const byte ROWS = 4; // Keypad satır sayısı
 const byte COLS = 4; // Keypad sütun sayısı
